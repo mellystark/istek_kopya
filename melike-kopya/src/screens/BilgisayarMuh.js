@@ -5,23 +5,23 @@ import {
   View,
   Image,
   TouchableOpacity,
-} from "react-native";
-import React from "react";
-import AntIcon from "react-native-vector-icons/AntDesign";
-export default function BilgisayarMuh({ navigation }) {
+} from 'react-native';
+import React from 'react';
+import AntIcon from 'react-native-vector-icons/AntDesign';
+export default function BilgisayarMuh({navigation}) {
   const handlePress = () => {
-    navigation.navigate("Courses");
+    navigation.navigate('Courses');
   };
   return (
     <ScrollView>
       <TouchableOpacity style={styles.wrapper} onPress={handlePress}>
         <Image
           style={styles.img}
-          source={require("../../assets/cppPhoto.png")}
+          source={require('../../assets/cppPhoto.png')}
         />
         <View style={styles.wrapper2}>
           <Text style={styles.title}>
-            C++ ile Algoritma ve {"\n"}Programlamaya Giriş
+            C++ ile Algoritma ve {'\n'}Programlamaya Giriş
           </Text>
           <AntIcon
             style={styles.AntDesign}
@@ -33,7 +33,7 @@ export default function BilgisayarMuh({ navigation }) {
         </View>
       </TouchableOpacity>
 
-      <View style={styles.wrapper}>
+      {/* <View style={styles.wrapper}>
         <Image
           style={styles.img}
           source={require("../../assets/kalkulus.jpg")}
@@ -54,7 +54,7 @@ export default function BilgisayarMuh({ navigation }) {
         >
           ÇOK YAKINDA!
         </Text>
-      </View>
+      </View> */}
     </ScrollView>
   );
 }
@@ -66,24 +66,24 @@ const styles = StyleSheet.create({
     borderRadius: 10,
   },
   title: {
-    alignItems: "flex-start",
+    alignItems: 'flex-start',
     marginLeft: 20,
     marginTop: 0,
     fontSize: 18,
-    fontWeight: "bold",
+    fontWeight: 'bold',
   },
   textDesc: {
     fontSize: 10,
   },
   wrapper: {
-    flexDirection: "row",
+    flexDirection: 'row',
     marginVertical: 15,
     marginHorizontal: 10,
     borderWidth: 0.7,
     borderRadius: 20,
-    borderColor: "#a9a9a9",
+    borderColor: '#a9a9a9',
 
-    backgroundColor: "#dcdcdc",
+    backgroundColor: '#dcdcdc',
   },
   wrapper2: {},
   AntDesign: {
@@ -94,12 +94,12 @@ const styles = StyleSheet.create({
     marginLeft: 31,
     marginTop: -23,
     fontSize: 17,
-    color: "#696969",
+    color: '#696969',
   },
   icerik2: {
     marginLeft: -90,
     marginTop: 60,
     fontSize: 17,
-    color: "#696969",
+    color: '#696969',
   },
 });

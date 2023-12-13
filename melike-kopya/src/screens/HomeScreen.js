@@ -1,31 +1,31 @@
-import { StyleSheet, Text, View, Image, TouchableOpacity } from "react-native";
-import React from "react";
+import {StyleSheet, Text, View, Image, TouchableOpacity} from 'react-native';
+import React from 'react';
 
-export default function HomeScreen({ navigation }) {
+export default function HomeScreen({navigation}) {
   const handlePress1 = () => {
-    navigation.navigate("ISUBÜ BM");
+    navigation.navigate('ISUBÜ BM');
   };
   const handlePress2 = () => {
-    navigation.navigate("ISUBÜ EEM");
+    navigation.navigate('ISUBÜ EEM');
   };
   const handlePress3 = () => {
-    navigation.navigate("ISUBÜ BİM");
+    navigation.navigate('ISUBÜ BİM');
   };
   const handlePress4 = () => {
-    navigation.navigate("ISUBÜ İM");
+    navigation.navigate('ISUBÜ İM');
   };
   const handlePress5 = () => {
-    navigation.navigate("ISUBÜ MM");
+    navigation.navigate('ISUBÜ MM');
   };
   const handlePress6 = () => {
-    navigation.navigate("ISUBÜ MEM");
+    navigation.navigate('ISUBÜ MEM');
   };
   return (
     <View style={styles.wrapper}>
       <View style={styles.isubu}>
         <Image
           style={styles.imgIsubu}
-          source={require("../../assets/istekLogosu.png")}
+          source={require('../../assets/istekLogosu.png')}
         />
         <Text style={styles.content}>ISTEK</Text>
       </View>
@@ -34,27 +34,26 @@ export default function HomeScreen({ navigation }) {
           <TouchableOpacity onPress={handlePress1}>
             <Image
               style={styles.img1}
-              source={require("../../assets/bilgisayarMuhendislik.jpg")}
+              source={require('../../assets/bilgisayarMuhendislik.jpg')}
             />
           </TouchableOpacity>
 
           <TouchableOpacity onPress={handlePress1}>
             <Text
               style={{
-                backgroundColor: "#ffa500",
+                backgroundColor: '#ffa500',
                 borderRadius: 8,
                 marginTop: -22,
                 paddingVertical: 1,
                 paddingHorizontal: 20,
                 width: 160,
-              }}
-            >
-              {" "}
-              Bilgisayar Müh{" "}
+              }}>
+              {' '}
+              Bilgisayar Müh{' '}
             </Text>
           </TouchableOpacity>
         </View>
-        <View style={styles.right1}>
+        {/* <View style={styles.right1}>
           <TouchableOpacity onPress={handlePress2}>
             <Image
               style={styles.img2}
@@ -183,8 +182,8 @@ export default function HomeScreen({ navigation }) {
               {" "}
               Mekatronik Müh{" "}
             </Text>
-          </TouchableOpacity>
-        </View>
+          </TouchableOpacity> */}
+        {/* </View> */}
       </View>
     </View>
   );
@@ -194,13 +193,13 @@ const styles = StyleSheet.create({
   imgIsubu: {
     width: 50,
     height: 40,
-    alignSelf: "center",
+    alignSelf: 'center',
     borderRadius: 30,
     marginRight: 5,
   },
   content: {
-    fontWeight: "bold",
-    alignSelf: "center",
+    fontWeight: 'bold',
+    alignSelf: 'center',
     fontSize: 30,
   },
   img1: {
@@ -211,7 +210,7 @@ const styles = StyleSheet.create({
   img2: {
     width: 170,
     height: 170,
-    position: "absolute",
+    position: 'absolute',
     right: 10,
     borderRadius: 40,
   },
@@ -223,7 +222,7 @@ const styles = StyleSheet.create({
   img4: {
     width: 170,
     height: 170,
-    position: "absolute",
+    position: 'absolute',
     right: 10,
     borderRadius: 40,
   },
@@ -235,57 +234,56 @@ const styles = StyleSheet.create({
   img6: {
     width: 170,
     height: 170,
-    position: "absolute",
+    position: 'absolute',
     right: 10,
     borderRadius: 40,
   },
   wrapper: {
-    width: "100%",
-    height: "100%",
+    width: '100%',
+    height: '100%',
   },
   bolumler: {},
   viewWrapper: {
-    flexDirection: "row",
+    flexDirection: 'row',
   },
   left1: {
-    position: "absolute",
+    position: 'absolute',
     left: 20,
     top: 0,
-
   },
   left2: {
-    position: "absolute",
+    position: 'absolute',
     left: 20,
     top: 230,
   },
   left3: {
-    position: "absolute",
+    position: 'absolute',
     left: 20,
     top: 460,
   },
   right1: {
-    position: "absolute",
+    position: 'absolute',
     right: 5,
     top: 0,
   },
   right2: {
-    position: "absolute",
+    position: 'absolute',
     right: 5,
     top: 230,
   },
   right3: {
-    position: "absolute",
+    position: 'absolute',
     right: 5,
     top: 460,
   },
   isubu: {
     marginBottom: 10,
     marginTop: 4,
-    flexDirection: "row",
+    flexDirection: 'row',
     borderWidth: 2,
-    borderLeftColor: "white",
-    borderTopColor: "white",
-    borderColor: "#b0c4de",
+    borderLeftColor: 'white',
+    borderTopColor: 'white',
+    borderColor: '#b0c4de',
     padding: 1,
   },
 });
